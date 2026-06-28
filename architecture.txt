@@ -1,0 +1,12 @@
+file.pdf (as a byte stream) -> lexer (gives us the tokens) -> parser(gives the Abstract syntax tree. # The recursive descent parser) -> The object graph ->
+
+resources:
+1. building a lexer: https://medium.com/@tharunappu2004/writing-a-lexer-in-c-a-step-by-step-guide-a1d5c55ac04d
+
+
+Key Implementation Steps
+
+Define the Grammar: Write down the BNF or EBNF rules for your language/format.
+Tokenize: Create a scanner that converts raw text into a stream of tokens.
+Parse: Write recursive functions that match grammar rules to tokens, building a data structure (like an AST) as output. 
+Handle Recursion: Use references or pointers for iterators/nodes to handle nested structures (e.g., nested JSON objects). 
